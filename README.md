@@ -18,17 +18,16 @@ FTP_USERNAME
 FTP_PASSWORD
 ```
 
-The deploy workflow uploads the repository files to:
+The FTP account should be restricted to:
 
 ```text
 /public_html/test/
 ```
 
-If your FTP account opens directly inside `public_html`, change the workflow path
-to:
+The deploy workflow uploads into the FTP account's root:
 
 ```text
-/test/
+/
 ```
 
 ## Setup
@@ -60,10 +59,18 @@ GitHub > Actions > Deploy test page > Run workflow
 
 ## Changing The URL
 
-To deploy somewhere else, edit `.github/workflows/deploy.yml`:
+This setup assumes the FTP account is already restricted to the target folder.
+For another project, create another FTP account restricted to that project's
+folder, for example:
+
+```text
+/public_html/another-project/
+```
+
+Keep the workflow upload path as:
 
 ```yaml
-server-dir: /public_html/another-project/
+server-dir: /
 ```
 
 Then the site would be available at:

@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SNR Media Deploy Test</title>
+    <meta
+      name="description"
+      content="A tiny deployment test page for snr-media.com."
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <section class="hero" aria-labelledby="page-title">
+        <p class="eyebrow">snr-media.com</p>
+        <h1 id="page-title">Deploy test is live.</h1>
+        <p class="lede">
+          This page was published from a GitHub repository using an automated
+          deploy workflow.
+        </p>
+        <a class="button" href="https://snr-media.com/test/">Open public URL</a>
+      </section>
+
+      <section class="status" aria-label="Deployment status">
+        <div>
+          <span class="signal" aria-hidden="true"></span>
+          <p>Target</p>
+          <strong>/public_html/test/</strong>
+        </div>
+        <div>
+          <p>Workflow</p>
+          <strong>GitHub Actions + FTP</strong>
+        </div>
+        <div>
+          <p>Next edit</p>
+          <strong>Push to main</strong>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
