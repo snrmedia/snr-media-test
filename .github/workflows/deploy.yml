@@ -24,7 +24,7 @@ jobs:
           security: loose
           timeout: 120000
           local-dir: ./
-          server-dir: /
+          server-dir: ./
           exclude: |
             **/.git*
             **/.git*/**
