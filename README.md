@@ -29,7 +29,7 @@ The FTP account should be restricted to:
 The deploy workflow uploads into the FTP account's root:
 
 ```text
-./
+/
 ```
 
 ## Setup
