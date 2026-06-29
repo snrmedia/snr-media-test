@@ -20,16 +20,16 @@ FTP_USERNAME
 FTP_PASSWORD
 ```
 
-The FTP account should point to:
+The FTP account should be restricted to:
 
 ```text
-/public_html/
+/public_html/test/
 ```
 
-The deploy workflow uploads into:
+The deploy workflow uploads into the FTP account's root:
 
 ```text
-/test/
+/
 ```
 
 ## Setup
