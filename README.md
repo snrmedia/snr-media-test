@@ -6,6 +6,8 @@ Tiny static project for testing automatic deployment to:
 https://snr-media.com/test/
 ```
 
+Deployment target folder must exist on the hosting account.
+
 ## What You Need
 
 1. A GitHub repository containing these files.
